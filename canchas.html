@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="canchas.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+</head>
+<body>
+    <header>
+        <a href="index.html" id="iconHome">
+            <img src="IMG/Logo Canchas.png" alt="" width="100px">
+        </a>
+        <form id="busqueda">
+            <div class="hora">
+                <span class="material-symbols-outlined" id="iconClock"></span>
+                <select name="lista" id="lista">
+                    <option>09:00hs</option>
+                    <option>10:00hs</option>
+                    <option>11:00hs</option>
+                    <option>12:00hs</option>
+                    <option>13:00hs</option>
+                    <option>14:00hs</option>
+                    <option>15:00hs</option>
+                    <option>16:00hs</option>
+                    <option>17:00hs</option>
+                    <option>18:00hs</option>
+                    <option>19:00hs</option>
+                    <option>20:00hs</option>
+                    <option>21:00hs</option>
+                    <option>22:00hs</option>
+                    <option>23:00hs</option>
+                </select>
+            </div>
+            <input type="date" name="fecha" id="fecha" >
+            <a href="canchas.html">
+                <button id="btnBuscar">Buscar Cancha</button>
+            </a>
+        
+        </form>
+    </header>
+    <div class="container">
+        <div class="container-cancha">
+            <div class="colunm1">
+                <div class="cancha">
+                    <div class="row1">
+                        <div class="cuadro" id="estrellas">                    
+                            <span class="material-symbols-outlined">star</span>
+                            <h3>4.5</h3>
+                        </div>
+                        <h2 class="cuadro" id="nombre">Xtreme Soccer</h2>
+                        <div class="cuadro" id="numJugadores">
+                            <span class="material-symbols-outlined">diversity_3</span>     
+                            <h3>7</h3>
+                
+                        </div>
+
+                    </div>
+                    <div class="row2">
+                        <div class="cuadro" id="direccion">
+                            <span class="material-symbols-outlined">location_on</span>
+                            <p>Av. Ricardo Mu;oz y Av. remigio Crespo</p>
+                        </div>
+                        
+                        <div class="cuadro" id="techo">
+                        </div>
+                    </div>
+                    <div class="row3">
+                        <div class="cuadro" id="precios">
+                            <div id="precio"> 
+                                <span class="material-symbols-outlined">sunny</span>
+                                <h2 class="valor" >$25.00</h2>
+                            </div>
+                            <div id="precio"> 
+                                <span class="material-symbols-outlined">dark_mode</span>                            
+                                <h2 class="valor" >$28.00</h2>
+                            </div>
+                        </div>
+                        <a class="cuadro" id="bnt_reserva" href="reserva.html">Reservar</a>
+                        <div class="cuadro" id="like">
+                            <span class="material-symbols-outlined">
+                                favorite
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+
+            <div class="column2">
+                <div id="map"></div>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="scriptcanchas.js"></script>
+    <script async
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBCXv9S92MlpYp4vfq3ax8Ly_MX2kwBB0g&libraries=places&callback=initMap"
+    defer></script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Reem+Kufi+Fun:wght@500&display=swap');
+:root{
+  --color-primario: #00B248;
+  --color-text-boton: #585757;
+  --fuente-principal: 'Reem Kufi Fun', sans-serif;
+}
+body{
+    margin: 0;
+    padding: 0;
+}
+
+/*HEADER*/
+header{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#iconHome{
+    margin-left: 60px;
+  }
+#busqueda{
+    display: flex;
+    width: 50%;
+    padding: 10px;
+    border: 2px solid var(--color-text-boton);
+    border-radius: 20px;
+    background-color: white;
+    justify-content: space-around;
+    height: 30px;
+    
+  }
+   /*Boton para seleccionar la hora*/
+  .hora{
+    display: flex;
+    align-items: center;
+    border-bottom: var(--color-primario) 2px solid;
+  }
+  .material-symbols-outlined {
+    margin-right: 5px;
+    color:  var(--color-primario);
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 24
+  }
+  #lista{
+    appearance: none;
+    background: transparent;
+    border: none;
+    color: var(--color-text-boton);
+    outline: none;
+    padding: 10px;
+  }
+  
+   /*Boton para seleccionar la fecha*/
+   #fecha{
+    appearance: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: var(--color-primario) 2px solid;
+    outline: none;
+   }
+   #btnBuscar{
+    background-color: #757474;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+   }
+  /*CONTENEDOR*/
+
+  .container-cancha{
+    height: 600px;
+  }
+  .container-cancha{
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .colunm1{
+    align-items: center;
+  }
+
+  .cancha{
+    background: radial-gradient(rgba(0, 0, 0, 0.699), rgba(0, 0, 0, 0.63)), url(IMG/xtrem.jpg);
+    background-size: cover;
+    color: white;
+    display: grid;
+    margin: auto;
+    width: 85%;
+    border-radius: 20px;
+    grid-template-rows: repeat(3, 1fr);        
+  }
+
+  .row1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 20px 20px 0px 0px;
+  }
+
+  .row2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .row3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    border-radius: 0px 0px 20px 20px;
+  }
+  
+  .cuadro{
+    margin: auto;
+    width: 100%;
+    height: 100%;
+  }
+
+  .valor{
+    margin: 0;
+    padding: 0;
+  }
+
+  #estrellas, #numJugadores, #direccion, #precio, #like, #techo, #nombre{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  }
+
+  .material-symbols-outlined {
+    color: white;
+    font-variation-settings:
+    'FILL' 1,
+    'wght' 400,
+    'GRAD' 200,
+    'opsz' 40
+  }
+
+  #direccion{
+    grid-column: span 2;
+  }
+  
+#bnt_reserva{
+  background-color: var(--color-primario);
+  border: none;
+  border-radius: 20px;
+  width: 70%;
+  height: 50%;  
+  color: white;
+}
+
+.row3{
+  border: 2px solid white;
+}
+.row3 #precios{
+  border-right: 2px solid white;
+}
+.row3 #like{
+  border-left: 2px solid white;
+}
+
+.row3 #like .material-symbols-outlined{
+  color: red;
+}
+
+.column2{
+  padding-right: 20px;
+  padding-left: 20px;
+}  
+
+
+ #servicios{
+  border: 2px solid var(--color-primario);
+  border-radius: 10px;
+}
+
+
+#map {
+  height: 100%;
+  border: 2px solid #eb0000dd    ;
+  border-radius: 20px;
+}
+
+.column2 {
+  height: 100%;
+  width: 90%;
+  margin: 0;
+  padding: 0;
+}
